@@ -43,11 +43,16 @@ else{
 
 // check if (male) and then check (22+) then he can able to marry
 
-let gender = "male";
+let male = "true";
 let age = 22;
-if(age >= 22 && gender == "male"){
+if(age >= 22 && male == "true"){
     console.log("he can able to marry");
 }
+
+//
+
+
+//task
 
 let age1 = 23;
 
@@ -60,3 +65,145 @@ else if(age1>=60){
 else{
     console.log("Minor");
 }
+
+//print all the vowels
+
+let char = "y";
+
+if(char === "a,e,i,o,u")
+{
+    console.log("vowels");
+
+}
+else{
+    console.log("not vowel");
+}
+//
+let c = "t";
+if(c== "a" || c=="e" || c=="i" || c=="o" || c=="u" ){
+    console.log("vowel");
+}
+else{
+    console.log("not vowel");
+}
+
+//
+
+let ch = "i";
+
+switch(ch){
+    case "a":
+        console.log("vowel");
+        break;
+        case "e":
+            console.log("vowel");
+            break;
+            case "i":
+                console.log("vowel");
+                break;
+                case "o":
+                    console.log("vowel");
+                    break;
+                    case "u":
+                        console.log("vowel");
+                        break;
+                        default:
+                            console.log("not vowel");
+
+}
+
+let day = "3";
+
+switch(day){
+    case "1":
+        console.log("Monday");
+        break;
+        case "2":
+            console.log("Tuesday");
+            break;
+            case "3":
+                console.log("Wednesday");
+                break;
+                case "4":
+                    console.log("Thrusday");
+                    break;
+                    case "5":
+                        console.log("Friday");
+                        break;
+                        case "6":
+                        console.log("Saturday");
+                        break;
+                        case "7":
+                        console.log("Sunday");
+                        break;
+
+                        default:
+                            console.log("invalid");
+
+}
+
+
+//task
+
+let Month = "2";
+
+switch(Month){
+    case "1":
+        console.log("January");
+        break;
+        case "2":
+            console.log("February");
+            break;
+            case "3":
+                console.log("March");
+                break;
+                case "4":
+                    console.log("April");
+                    break;
+                    case "5":
+                        console.log("May");
+                        break;
+                        case "6":
+                        console.log("June");
+                        break;
+                        case "7":
+                        console.log("July");
+                        break;
+                        case "8":
+                        console.log("August");
+                        break;
+
+                        case "9":
+                        console.log("September");
+                        break;
+
+                        case "10":
+                        console.log("October");
+                        break;
+
+                        case "11":
+                        console.log("November");
+                        break;
+
+                        case "12":
+                        console.log("December");
+                        break;
+
+                        default:
+                            console.log("invalid");
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
