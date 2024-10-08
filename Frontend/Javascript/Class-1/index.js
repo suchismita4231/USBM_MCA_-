@@ -59,8 +59,15 @@ console.log(isSingle);
 
 let name = "Suchi";
 let age = 22;
-let city = "Bhubaneswar";
+let city = " Bhubaneswar ";
 let roll_no = 136;
 let college = "USBM";
 let batch = "2023-25";
 console.log(`my name is ${name} from ${city} , my rollno is ${roll_no} , age is ${age} , college is ${college} , batch is ${batch}`);
+console.log(city.length -2);
+
+//coercion
+
+let num =  100  ;
+let num1 = "100";
+console.log(num + num1);
