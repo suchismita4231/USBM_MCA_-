@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #aef52b;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    transition: opacity 0.5s;
+    color: rgb(226, 43, 202);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+button{
+    padding: 6px 12px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.5s;
+
+}
+
+button:hover{
+    background-color: rgb(68, 108, 168);
+    cursor: pointer;
+}
