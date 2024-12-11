@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">E-Shop</div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart">
+        <h1 id="h1">Your Shopping Cart</h1>
+        <div>
+        <div id="cart-items"></div>
+        <div id="total"></div>
+        <div>
+        <button type="button">Proceed to Checkout</button>
+    </div>
+</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 E-Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function updateCart() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.textContent = `${item.productName} - $${item.productPrice}`;
+                cartItemsContainer.appendChild(itemDiv);
+                total += item.productPrice;
+            });
+
+            document.getElementById('total').textContent = `Total: $${total}`;
+        }
+
+        updateCart();
+    </script>
+</body>
+</html>

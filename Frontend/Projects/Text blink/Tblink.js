@@ -6,12 +6,12 @@ document.getElementById('start').addEventListener('click', () => {
     if (!blinkingInterval) {
         blinkingInterval = setInterval(() => {
             textElement.classList.toggle('hidden');
-        }, 500); // Adjust the interval for blink speed (500ms)
+        }, 500); 
     }
 });
 
 document.getElementById('stop').addEventListener('click', () => {
     clearInterval(blinkingInterval);
     blinkingInterval = null;
-    textElement.classList.remove('hidden'); // Ensure text is visible when stopped
+    textElement.classList.remove('hidden');
 });
